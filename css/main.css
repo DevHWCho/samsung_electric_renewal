@@ -67,8 +67,8 @@ li.slide>p {position: absolute; left: 420px; transform: translateX(-50%); top: 2
 .con3_textContainer {position: relative; width: 600px; height: 350px;}
 .con3_textBox {position: absolute; top: 50%; left: 60px; line-height: 1.6; transform: translateY(-50%);}
 .con3_bgImg {display: block; width: 50px; height: 30px;}
-.conBg1 {background: url(../images/ico_prd01.png) no-repeat; background-size: fill;}
-.conBg2 {background: url(../images/ico_prd02.png) no-repeat; background-size: fill;}
+.conBg1 {background: url(../images/ico_prd01.png) no-repeat; background-size: cover;}
+.conBg2 {background: url(../images/ico_prd02.png) no-repeat; background-size: cover;}
 .conBg3 {background: url(../images/ico_prd03.png) no-repeat; background-size: contain;}
 .con3_textBox>h3 {margin-top: 25px; font-size: 26px; font-weight: 600; letter-spacing: -1px;}
 .con3_textBox>p {margin-bottom: 35px; font-size: 16px; letter-spacing: -0.5px;} 
