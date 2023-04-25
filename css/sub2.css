@@ -1,0 +1,39 @@
+@import url(reset.css);
+/* sub2.css */
+
+/* container */
+/* spot */
+.spot {background: url(../images/careers_visual_img.jpg) no-repeat 50% 0; color: #fff;}
+.spot_inner > h2 {font-size: 46px; margin-bottom: 15px;}
+.spot_inner > p {font-size: 16px; color: #eee;}
+.spot_inner > p.path {position: absolute; right: 0; bottom: 20px; text-align: right; font-size: 14px; color: #ccc;}
+
+/* content */
+p.info_txt {text-align: right; margin-bottom: 10px;}
+
+table.job {width: 100%; margin-bottom: 60px;}
+.job th, .job td {height: 60px; border: 1px solid #ccc; text-align: center;}
+
+.job thead th {border-top: 1px solid #000; background-color: #f3f3f3; font-size: 18px;}
+.job thead th:first-of-type {width: 120px; border-left: none;}
+.job thead th:nth-of-type(2) {width: 640px;}
+.job thead th:last-of-type {width: 380px; border-right: none;}
+
+.job tbody td {border-top: none; font-size: 16px;}
+.job tbody td:first-of-type {border-left: none;}
+.job tbody td:last-of-type {border-right: none;}
+.job tbody tr:last-of-type td {border-bottom: 1px solid #000;}
+
+/* resume */
+.resume {margin-bottom: 60px; padding: 20px; background-color: #f3f3f3; font-size: 16px; letter-spacing: -1.5px;}
+.resume>p:last-of-type {margin-bottom: 30px; color: #0079cc;}
+.resume_download {display: flex; justify-content: space-between; align-items: center;}
+.resume_download>a {position: relative; display: block; width: 200px; height: 40px; padding-right: 20px; background-color: #333; color: #fff; text-align: center; line-height: 40px; box-sizing: border-box;}
+.resume_download>a::after {position: absolute; top: 50%; width: 15px; height: 13px; margin-left: 10px; background: url(../images/ico_download.png) no-repeat 0 0; content: ''; transform: translateY(-50%);}
+
+/* faq */
+div.faq {display: flex; justify-content: space-between;
+  width: 100%; padding: 20px 30px; box-sizing: border-box; border: 1px solid #ccc;}
+div.faq > p {font-size: 16px; line-height: 45px; letter-spacing: -1.5px;}
+div.faq > a {position: relative; display: block; width: 160px; height: 45px; padding-right: 10px; background-color: #043285; color: #fff; font-size: 16px; text-align: center; line-height: 45px; letter-spacing: -1px; box-sizing: border-box;}
+div.faq > a::after {position: absolute; top: 50%; width: 7px; height: 13px; margin-left: 10px; background: url(../images/icon_btn_arrow_w.png) no-repeat 0 0; content: ''; transform: translateY(-50%);}
