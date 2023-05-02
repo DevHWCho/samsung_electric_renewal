@@ -11,6 +11,9 @@ li.slide>p {position: absolute; left: 420px; transform: translateX(-50%); top: 2
 #container::after {z-index: -1; position: absolute; top: 0; width: 100%; height: 380px; background-color: #f4f6fb; content: '';}
 
 /* content1 */
+.content1 {opacity: 0; transform: translateY(200px); transition: all 1s ease 0s;}
+.content1.on {opacity: 1; transform: translateY(0px);}
+
 .con1_title {padding: 120px 0px 60px; font-size: 36px; font-weight: 600; text-align: center; letter-spacing: -0.8px;}
 .con1_content {display: flex; justify-content: center; gap: 60px; width: 100%;}
 .con1_content>li {width: 360px; height: 340px; border-bottom: 3px solid transparent; transition: all 0.5s ease 0s;}
@@ -32,6 +35,9 @@ li.slide>p {position: absolute; left: 420px; transform: translateX(-50%); top: 2
 .news_btn>li>a::after {position: absolute; top: 50%; width: 10px; height: 10px; margin-left: 5px; background: url(../images/btn_arrow_ico_g.png) no-repeat 0 0; content: ''; transform: translateY(-50%);}
 
 /* content2 */
+.content2 {opacity: 0; transform: translateY(200px); transition: all 1s ease 0s;}
+.content2.on {opacity: 1; transform: translateY(0px);}
+
 .content2::after {position: absolute; top: 0; right: 0; width: 890px; height: 290px; background: url(../images/img_prhall.png) no-repeat 0 0; content: '';} 
 .con2_inner {position: relative; width: 1200px; height: 100%; margin: 0 auto; line-height: 1.2;}
 .con2_text {z-index: 1; position: absolute; top: 50%; transform: translateY(-50%);}
@@ -58,22 +64,27 @@ li.slide>p {position: absolute; left: 420px; transform: translateX(-50%); top: 2
 
 .con3_section2 {width: 1200px; height: 100%; margin: 0 auto; padding-top: 60px; padding-bottom: 180px;}
 .con3_inner {display: flex; width: 100%;}
-
 .imgContainer {overflow: hidden; width: 600px; height: 350px;}
-.conImg {transition: all 0.5s ease 0s;}
-.con3_img1 {width: 600px; height: 350px;}
-.con3_img2 {width: 600px; height: 350px;}
-.con3_img3 {width: 600px; height: 350px;}
+
+.content3 .conImg {opacity: 0; transition: all 1s ease 0s;}
+.conImg.on {opacity: 1; width: 600px; height: 350px; transform: translateX(0px);}
+
+.con3_img1 {width: 600px; height: 350px; transform: translateX(-100px);}
+.con3_img2 {width: 600px; height: 350px; transform: translateX(100px);}
+.con3_img3 {width: 600px; height: 350px; transform: translateX(-100px);}
+
 .con3_textContainer {position: relative; width: 600px; height: 350px;}
-.con3_textBox {position: absolute; top: 50%; left: 60px; line-height: 1.6; transform: translateY(-50%);}
+.con3_textBox {opacity: 0; position: absolute; top: 50%; left: 60px; line-height: 1.6; transform: translateY(-50%); transition: all 1s ease 0.5s;}
+.con3_textBox.on {opacity: 1;}
+
 .con3_bgImg {display: block; width: 50px; height: 30px;}
 .conBg1 {background: url(../images/ico_prd01.png) no-repeat; background-size: cover;}
 .conBg2 {background: url(../images/ico_prd02.png) no-repeat; background-size: cover;}
 .conBg3 {background: url(../images/ico_prd03.png) no-repeat; background-size: contain;}
-.con3_textBox>h3 {margin-top: 25px; font-size: 26px; font-weight: 600; letter-spacing: -1px;}
-.con3_textBox>p {margin-bottom: 35px; font-size: 16px; letter-spacing: -0.5px;} 
-.con3_textBox>p.con3_detail {position: relative; width: 160px; height: 45px; padding-right: 20px; background-color: #fff; font-size: 15px; text-align: center; line-height: 45px; box-sizing: border-box; transition: all 0.5s ease 0s;}
-.con3_textBox>p.con3_detail::after {position: absolute; top: 50%; width: 15px; height: 11px; margin-left: 8px; background: url(../images/ico_prd_arr.png) no-repeat 0 0; content: ''; transform: translateY(-50%); transition: all 0.5s ease 0s;}
+.con3_textBox h3 {margin-top: 25px; font-size: 26px; font-weight: 600; letter-spacing: -1px;}
+.con3_textBox p {margin-bottom: 35px; font-size: 16px; letter-spacing: -0.5px;} 
+.con3_textBox p.con3_detail {position: relative; width: 160px; height: 45px; padding-right: 20px; background-color: #fff; font-size: 15px; text-align: center; line-height: 45px; box-sizing: border-box; transition: all 0.5s ease 0s;}
+.con3_textBox p.con3_detail::after {position: absolute; top: 50%; width: 15px; height: 11px; margin-left: 8px; background: url(../images/ico_prd_arr.png) no-repeat 0 0; content: ''; transform: translateY(-50%); transition: all 0.5s ease 0s;}
 
 .con3_inner:hover .conImg {transform: scale(1.1);}
 .con3_inner:hover .con3_textBox>p.con3_detail {background-color: #1428a0; color: #fff;}

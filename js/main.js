@@ -31,6 +31,34 @@ window.addEventListener('load',()=>{
       headerWrap.style.height = `70px`;
     })
   }
+
+  // 스크롤 시 해당 컨텐츠에 애니메이션 작동
+  const contents = document.querySelectorAll('#container>div')
+  const con3_img = document.querySelectorAll('.conImg');
+  const con3_textBox = document.querySelectorAll('.con3_textBox');
+  console.log(contents)
+  console.log(con3_img)
+  console.log(con3_textBox)
+
+  var scrollY = window.pageYOffset;
+    console.log(scrollY)
+  window.addEventListener('scroll',e=>{
+    scrollY = window.pageYOffset;
+    if(scrollY>100 && scrollY <= 500){
+      contents[0].classList.add('on')
+    }else if(scrollY>1300 && scrollY <= 2000){
+      contents[1].classList.add('on')
+    }else if(scrollY>2000 && scrollY <= 2500){
+      con3_img[0].classList.add('on');
+      con3_textBox[0].classList.add('on');
+    }else if(scrollY>2500 && scrollY <= 2800){
+      con3_img[1].classList.add('on');
+      con3_textBox[1].classList.add('on');
+    }else if(scrollY>2800 && scrollY <= 3000){
+      con3_img[2].classList.add('on');
+      con3_textBox[2].classList.add('on');
+    }
+  })
   
   
   /* 검색박스 */
